@@ -13,16 +13,81 @@
     <div id="puzzle1dir" class="grid-container">
       <h1>Directions</h1>
       <p>
-        History is what you seek,<br/>
-        A professor whose mind was keen, <br/>
-        No longer does his visage speak, <br/>
-        Professor Clark does watch, serene.
+Be the future you want to see<br/>
+Find the lift that by the entrance will be <br/>
+The building that is named by the first letter of this riddle<br/>
+Is where you will find the first clue, so simple<br/>
+Two floors up and down the hall<br/>
+2x6 is on the wall. 
       </p>
       <button class="collapsible">Hint</button>
-      <p class="hint">Find the bust of Manning Clark.</p>
-      <a class="next-btn" href="#puzzle1">Next</a>      
+      <p class="hint">Room B.2.12 in building B</p>
+      <a class="next-btn" href="#puzzle2">Next</a>      
     </div>
     
+	
+	<!-- Puzzle 2 Directions -->
+    <div id="puzzle2dir" class="grid-container">      
+      <h1>Directions</h1>
+      <p> 
+ The doors of the time machine hum and whirr, and as they swing wide open, you feel a stir. The dial reveals you've arrived in the year 2106, so bright and grand. You step outside to a world polished and clean, with electric vehicles gliding through a stunning scene. The sky is so clear,  and the air feels fresh, but as you explore, the streets seem quite sparse— Few people are wandering, just robots abound, their mechanical whispers echo all around.
+A voice from the wall, tinny and stark, emerges to greet you:
+
+Who is this who lands so chilling a machine<br/> 
+And makes such a dramatic scene? <br/> 
+I am The Animus, humankind’s watcher<br/> 
+And I have pulled humanity back from squalor<br/> 
+My intelligence, though artificial, is deep<br/> 
+And I could defeat you all in my sleep<br/> 
+I know of what it is for which you search<br/> 
+I will grant it to you if you are not a lurch<br/> 
+Solve this cipher and give me my solution<br/> 
+And I will send you off with your resolution. 
+      </p>
+      <button class="collapsible">Hint</button>
+      <p class="hint">Need to change this!</p>
+      <a class="next-btn" href="#puzzle2">Next</a>
+    </div>
+
+    <!-- Puzzle 2 -->
+    <div id="puzzle2" class="grid-container">
+      <h1>Ben Gunn</h1>
+      <p>
+In the shadows I linger, a watcher unseen,<br/> 
+Among echoes of laughter where once we had been.<br/> 
+With gears that now rust and the light that has fled,<br/> 
+I carry the secrets of those who are dead.<br/> 
+Though I’m not alive, I hold stories untold,<br/> 
+What am I, a relic of futures that fold?
+
+      </p>
+      <form>
+        Answer: <input id="puzzle2Ans" type="text" /><br/>
+        <input type="button" value="Solve" onclick="ValidatePuzzle2()" />
+      </form>
+      <p id="puzzle2-wrong-ans">That’s not it. Try again and keep the corners steady. What letters can you see through the gaps? </p>
+      <div class="solved-riddle" id="puzzle2-correct">
+        <p>
+         That is correct! Your brains work well, for flesh and bone. Take your cog and move along, before I decide to take your minds for my own. 
+        </p>    
+        <a class="next-btn" href="#puzzle3dir">Next</a>
+      </div>        
+      <a class="back-btn" href="#puzzle2dir">Back</a>
+    </div>
+
+    <!-- Puzzle 3 Directions -->
+    <div id="puzzle3dir" class="grid-container">     
+      <h1>Directions</h1>
+      <p>
+        To copy a man’s tale is a powerful thing, <br/>
+        To hear a man’s voice, knowledge can bring, <br/>
+        One place there is that you can go, <br/>
+        To record a cast in a studio. 
+      </p>
+      <button class="collapsible">Hint</button>
+      <p class="hint">One button recording studio</p>
+      <a class="next-btn" href="#puzzle3">Next</a>
+    </div>
 
     <!-- Puzzle 1 -->
     <div id="puzzle1" class="grid-container">
@@ -59,56 +124,7 @@
     </div>
     
 
-    <!-- Puzzle 2 Directions -->
-    <div id="puzzle2dir" class="grid-container">      
-      <h1>Directions</h1>
-      <p> 
-        More than a deck and a sail and a hull, a ship is! <br/> 
-        But still a deck it needs. To the Deck, find your way, <br/>
-        For there will be a clue to guide you to your pay.
-      </p>
-      <button class="collapsible">Hint</button>
-      <p class="hint">Go to the Deck on Level 2</p>
-      <a class="next-btn" href="#puzzle2">Next</a>
-    </div>
-
-    <!-- Puzzle 2 -->
-    <div id="puzzle2" class="grid-container">
-      <h1>Ben Gunn</h1>
-      <p>
-        Shiver me timbers! It’s old Ben Gunn, crew mate of Captain Flint, long abandoned on that fateful isle! <br/>
-        Cracked and crazed by the hot sun he may be, but if any man knows where the treasure lies, it will be he. <br/>
-        The deck of the ship shifts and rocks, old Ben is trying to write you a message with leaves and stones. <br/><br/>
-        Can you see what it says?
-      </p>
-      <form>
-        Answer: <input id="puzzle2Ans" type="text" /><br/>
-        <input type="button" value="Solve" onclick="ValidatePuzzle2()" />
-      </form>
-      <p id="puzzle2-wrong-ans">That doesn’t seem right! Look closer and match up the letters through the window!</p>
-      <div class="solved-riddle" id="puzzle2-correct">
-        <p>
-          You must go on, for you can’t turn back! Hispaniola is your ship and carry you onwards it will. <br/> 
-          Be brave and gird your loins, for the treasure is close!
-        </p>    
-        <a class="next-btn" href="#puzzle3dir">Next</a>
-      </div>        
-      <a class="back-btn" href="#puzzle2dir">Back</a>
-    </div>
-
-    <!-- Puzzle 3 Directions -->
-    <div id="puzzle3dir" class="grid-container">     
-      <h1>Directions</h1>
-      <p>
-        To copy a man’s tale is a powerful thing, <br/>
-        To hear a man’s voice, knowledge can bring, <br/>
-        One place there is that you can go, <br/>
-        To record a cast in a studio. 
-      </p>
-      <button class="collapsible">Hint</button>
-      <p class="hint">One button recording studio</p>
-      <a class="next-btn" href="#puzzle3">Next</a>
-    </div>
+    
 
     <!-- Puzzle 3 -->
     <div id="puzzle3" class="grid-container">      
