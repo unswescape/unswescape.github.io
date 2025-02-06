@@ -7,7 +7,7 @@ function ValidatePuzzle3() {
   if (playersAnswer.includes("Nature") || playersAnswer.includes("nature")){
     document.getElementById("puzzle3-correct").style.display = "block";    
   } else { //If the answer doesnt match, call the Puzzle6Wrong function
-    Puzzle1Wrong();
+    Puzzle3Wrong();
   }
 }
 
