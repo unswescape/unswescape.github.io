@@ -4,7 +4,7 @@ function ValidatePuzzle2() {
   //Get the answer the player has given and make it lowercase
   var playersAnswer = document.getElementById("puzzle2Ans").value.toLowerCase();
   //If the players answer matches the text we're looking for, set the puzzle2-correct texts style.display to block, ie make it show
-  if (playersAnswer.includes("A Clock")) {
+  if (playersAnswer.includes("hispaniola")) {
     document.getElementById("puzzle2-correct").style.display = "block";  
   } else {//If the answer doesnt match, call the Puzzle2Wrong function
     Puzzle2Wrong();
