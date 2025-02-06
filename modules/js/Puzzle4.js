@@ -1,18 +1,24 @@
 //Checks if the answer given for puzzle 4 is correct
 
-//If the correct multiple option answer was selected, display the puzzle4-correct text
 function ValidatePuzzle4() {
-  document.getElementById("puzzle4-correct").style.display = "block";
+  //Get the answer the player has given and make it lowercase
+  var playersAnswer = document.getElementById("puzzle4Ans").value.toLowerCase();
+  //If the players answer matches the text we're looking for set the puzzle4-correct texts style.display to block, ie make it show
+  if (playersAnswer.includes("Star") || playersAnswer.includes("star")){
+    document.getElementById("puzzle4-correct").style.display = "block";    
+  } else { //If the answer doesnt match, call the Puzzle4Wrong function
+    Puzzle4Wrong();
+  }
 }
 
-//If the wrong answer was selected, display the puzzle4-wrong-ans text
-//Then call the hidePuzzle4 function after 4000ms
+//If the answer given was wrong, the puzzle4-wrong-ans text will display
+//Then we'll call the HidePuzzle3 function after 4000ms to hide the text again
 function Puzzle4Wrong() {
   document.getElementById("puzzle4-wrong-ans").style.display = "block";
-  wrongAnswer = setTimeout(hidePuzzle4, 4000);
+  wrongAnswer = setTimeout(HidePuzzle1, 4000);
 }
 
 //Hide the puzzle4-wrong-ans text
-function hidePuzzle4() {
+function HidePuzzle4() {
   document.getElementById("puzzle4-wrong-ans").style.display = "none";
 }
